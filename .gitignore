@@ -1,26 +1,123 @@
-# Python
+# ============================================
+# PYTHON
+# ============================================
+
+# Byte-compiled / optimized files
 __pycache__/
 *.py[cod]
-*.sqlite3
-db.sqlite3
+*$py.class
+*.pyo
+*.pyd
 
-# Virtual environments
+# Python cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.tox/
+.nox/
+
+# Coverage reports
+.coverage
+.coverage.*
+htmlcov/
+
+# Logs
+*.log
+
+# ============================================
+# DJANGO
+# ============================================
+
+# SQLite database
+db.sqlite3
+*.sqlite3
+
+# Uploaded media (optional - remove if you want media in Git)
+media/
+
+# Collected static files
+staticfiles/
+
+# Local settings
+local_settings.py
+
+# ============================================
+# VIRTUAL ENVIRONMENTS
+# ============================================
+
 venv/
 .venv/
 env/
+ENV/
 
-# Node
-frontend/node_modules/
+# ============================================
+# ENVIRONMENT VARIABLES
+# ============================================
 
-# Environment files
 .env
 .env.*
+!.env.example
 
-# VS Code
+# ============================================
+# NODE / REACT
+# ============================================
+
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# npm / yarn / pnpm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ============================================
+# IDEs
+# ============================================
+
 .vscode/
+.idea/
+
+# ============================================
+# OPERATING SYSTEM FILES
+# ============================================
 
 # macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 
 # Windows
 Thumbs.db
+Desktop.ini
+
+# ============================================
+# GIT
+# ============================================
+
+*.orig
+
+# ============================================
+# MISC
+# ============================================
+
+*.swp
+*.swo
+*~
+
+# ============================================
+# OPTIONAL
+# Uncomment these only if needed
+# ============================================
+
+# If you generate PDFs automatically
+# *.pdf
+
+# If you use Jupyter notebooks
+# .ipynb_checkpoints/
+
+# If you use Docker
+# docker-compose.override.yml
